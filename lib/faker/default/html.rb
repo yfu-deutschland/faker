@@ -28,8 +28,8 @@ module Faker
       #   Faker::HTML.paragraph #=> "<p>Incidunt atque quis</p>"
       #
       # @faker.version 3.2.1
-      def paragraph(sentence_count: 3, supplemental: false, random_sentences_to_add: 0, exclude_words: nil)
-        "<p>#{Faker::Lorem.paragraph(sentence_count: sentence_count, supplemental: supplemental, random_sentences_to_add: random_sentences_to_add, exclude_words: exclude_words)}</p>"
+      def paragraph(sentence_count: 3, supplemental: false, random_sentences_to_add: 0)
+        "<p>#{Faker::Lorem.paragraph(sentence_count: sentence_count, supplemental: supplemental, random_sentences_to_add: random_sentences_to_add)}</p>"
       end
 
       ##
